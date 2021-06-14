@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+</head>
+<body>
+
+    <head>
+        <img src="./img/decsi.png" width="20%" title="Logo do DECSI" alt="Logo DECSI">
+        <h1>Banco de Dados WEB</h1>
+        <a href="index.html">Home</a>
+        <a href="estados.html">Estados</a>
+        <a href="cidades.html">Cidades</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="pessoas.html">Pessoas</a>
+        <a href="compras.html">Compras</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="close.html">Sair</a>
+    </head>
+
+    <h1>Dados para cadastro</h1>
+
+    <form method="GET" action="validar.html">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+        </div>
+
+        <div>
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco" placeholder="Digite o endereço...">
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email...">
+        </div>
+
+        <div>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone...">
+        </div>
+
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" placeholder="Sua idade...">
+        </div>
+
+
+        <div>
+            <label> Gênero: </label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="f">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="m">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="nb">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="sr">
+                <label for="semresposta">Prefiro não informar</label>
+            </div>       
+
+        </div>
+
+        <div>
+            <label> Documento de identificação: </label>
+
+            <div>
+                <input type="radio" name="documento" id="rg" value="rg">
+                <label for="rg">Identidade</label>
+            </div>
+
+            <div>
+                <input type="radio" name="documento" id="cpf" value="cpf">
+                <label for="cpf">CPF</label>
+            </div>
+            <input type="text" name="documento" id="documento" placeholder="Numero do documento">
+
+        </div>
+
+        
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <a href="pessoas.html">Voltar</a>
+
+    <footer>
+        Atividade - Sistemas WEB I - Professor: Fernando
+    </footer>
+    
+</body>
+</html>
